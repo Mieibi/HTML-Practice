@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
     <h1>Contacts</h1>
@@ -13,24 +14,49 @@
         <li><a href="mailto: omisamapakabo@gmail.com?subject = Something = message">aomieibi@yahoo.com</a></li>
         <li><a href="mailto: omisamapakabo@gmail.com?subject = Something = message">omieibi.amapakabo@aiesec.net</a></li>
     </ul>
+    <hr>
     <h3>Social media</h3>
     <ul>
         <li><a href="https://www.instagram.com/miebz_/">Instagram</a></li>
         <li><a href="https://twitter.com/m_iebz">Twitter</a></li>
         <li><a href="https://www.facebook.com/profile.php?id=100016766922977">Facebook</a></li>
     </ul>
+    <hr>
+    <form action="">
+        <label for="username">Your Name: </label>
+        <input type="text" id="username">
+        <br>
+        <br>
+        <label>password</label>
+        <input type="password">
+        <br>
+        <br>
+        <label>Choose sex:</label>
+        <select name="sex">
+            <option value="">------</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br>
+        <br>
+        <input type="button" value="SUBMIT">
+    </form>
+    <hr>
     <form action="mailto: omisamapakabo@gmail.com?subject = Something = message" method="POST" enctype="text/plain">
-        <label>Name:</label>
-        <input type="text" placeholder="John Doe" name="Your-name">
-        <br>
-        <label for="">Your email</label>
-        <input type="email" placeholder="oma@kala.com" name="your-email">
-        <br>
-        <label>Your Messsage:</label>
-        <br>
-        <textarea name="text"cols="50" rows="10"></textarea>
-        <br>
-        <input type="submit" value="SUBMIT">
+        <fieldset>
+            <legend>Complaints</legend>
+            <label>Name:</label>
+            <input type="text" placeholder="John Doe" name="Your-name">
+            <br>
+            <label for="">Your email</label>
+            <input type="email" placeholder="oma@kala.com" name="your-email">
+            <br>
+            <label>Your Messsage:</label>
+            <br>
+            <textarea name="text"cols="50" rows="10"></textarea>
+            <br>
+            <input type="submit" value="SUBMIT">
+        </fieldset>
     </form>
 </body>
 </html>
